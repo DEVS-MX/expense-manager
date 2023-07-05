@@ -4,8 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Manager | DEVS MX</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/mediaqueries.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <section id="header">
+       <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1> Bienvenido, Jose Arias</h1>
+            </div>
+        </div>
+       </div>
+    </section>
+
+    <section>
+       <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Tus Gastos</h2>
+                <ul class="expenseList">
+                    <li>
+                        <span class="expenseName">PS5</span>
+                        <span class="expensePrice">$14,000</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+               <h2> Tus Ingresos</h2>
+               <ul class="expenseList">
+                <li>
+                    <span class="incomeName">Sueldo</span>
+                    <span class="incomePrice">$8,000</span>
+                </li>
+            </ul>
+            </div>
+        </div>
+       </div>
+    </section>
+
+    <div class="menuNav">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Gastos</a>
+            </li>
+            <li>
+                <a href="#" class="addItem">Add Item</a>
+            </li>
+            <li>
+                <a href="#">Ingresos</a>
+            </li>
+            <li>
+                <a href="#">Config</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="modal hidden" id="modal-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <h3> MODAL</h3>
+                        <span class="close">X</span>
+                        <hr>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                   <form action="">
+                    <label for="expenseName">Gasto</label>
+                    <input type="text" name="expenseName" placeholder="Name">
+                   </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
