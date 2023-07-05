@@ -1,0 +1,115 @@
+/* GLOBAL CLASES */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.text-center {
+    text-align: center;
+}
+/* HEADER */
+#header .container {
+  background: #1488cc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2b32b2,
+    #1488cc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2b32b2,
+    #1488cc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FAFAFA;
+  border-radius: 12px;
+  padding: 5rem 2rem;
+}
+
+
+/* EXPESES LISTITEMS*/
+.expenseList {
+    list-style-type: none;
+    padding: 0px !important;
+}
+.expenseList li {
+    border-bottom: 1px solid grey;
+    display: block;
+    height: 25px;
+}
+.expenseList li span {
+    display: inline-block;
+}
+.expenseList li span:first-child {
+    font-size: larger;
+    font-weight: bolder;
+    float: left;
+}
+
+.expenseList li span:last-child {
+    float: right;
+}
+
+
+/* Menu NAV*/
+.menuNav {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #FAFAFA;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+}
+.menuNav ul {
+    list-style-type: none;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.menuNav ul li {
+    display: inline-block;
+    width: calc(98.7% / 5);
+    text-align: center;
+    
+}
+.menuNav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+.menuNav ul li:hover a {
+    background-color: #1488cc;
+    color: #FAFAFA;
+}
+
+.menuNav ul li a:nth-child(3) {
+    border-radius: 100%;
+    background-color: red;
+    color: #FAFAFA;
+    padding: 2rem;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+/* MODAL*/
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FAFAFA;
+    display: block;
+    width: 80%;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    height: 50%;
+    
+}
+
+.modal .hidden {
+    transform: translateY(-1500px);
+    transition: all 300ms ease-in-out;
+}
+.modal .close {
+    position: absolute;
+    display: block;
+    right: 20px;
+    top: 0px !important;
+    padding: 10px;
+    cursor: pointer;
+}
